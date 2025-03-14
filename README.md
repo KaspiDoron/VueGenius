@@ -26,6 +26,4 @@ Welcome to the **Personalized Quiz App**! This dynamic app, built with **Pinia**
 
 Check out the app in action! Click the button below to start quizzing right away. Try topics like “AI Innovations” 🤖 or “World Capitals” 🗺️ to see the magic of Gemini AI and Vue in full swing.
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Click_Here-brightgreen?style=for-the-badge&logo=rocket)](https://your-live-demo-link.com)
-
-(Note: Replace `https://your-live-demo-link.com` with your actual deployment URL!)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Click_Here-brightgreen?style=for-the-badge&logo=rocket)](https://vue-genius-indol.vercel.app/)
