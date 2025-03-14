@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 
+const { errorMessage } = defineProps(["errorMessage"]);
 const emit = defineEmits(["startQuiz"]);
 const topic = ref("");
 </script>
@@ -12,5 +13,8 @@ const topic = ref("");
     <button :disabled="!topic" @click="emit('startQuiz', topic)">
       Start Quiz
     </button>
+    <small class="error" v-if="errorMessage">
+      There was an error, please try again later.
+    </small>
   </section>
 </template>

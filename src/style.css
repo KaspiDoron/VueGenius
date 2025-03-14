@@ -23,14 +23,25 @@ ul {
   padding: 0;
 }
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  gap: 0.4rem;
 }
 .container {
-  max-width: 720px;
-  width: 95%;
-  margin: auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  gap: 0.4rem;
+  padding: auto 1rem;
+  margin: 0 auto;
   height: 100%;
 }
 .error {
@@ -63,6 +74,7 @@ button {
     }
     &.active {
       border: 2px solid var(--dark-color);
+      background-color: rgba(255, 173, 21, 0.459);
     }
   }
 }
@@ -99,6 +111,8 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 8px 0;
+    gap: 4rem;
+
     h2 {
       font-size: 28px;
     }
@@ -169,5 +183,22 @@ section {
 @keyframes l13 {
   100% {
     transform: rotate(1turn);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: auto 0.4rem;
+  }
+  input,
+  button {
+    width: 95vw;
+  }
+
+  .quiz {
+    .header {
+      display: block;
+      gap: 1rem;
+    }
   }
 }
